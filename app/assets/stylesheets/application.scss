@@ -5,8 +5,17 @@
 
 // External libraries
 @import "bootstrap/scss/bootstrap";
-
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+body {
+    background-color: white;
+}
+
+.navbar {
+    background-color: rgb(202, 202, 196);
+}

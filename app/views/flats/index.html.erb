@@ -1,8 +1,15 @@
+<div class="container d-flex flex-wrap">
 <% @flats.each do |flat| %>
-<div class="card">
+<div class="card m-5 shadow w-30">
+    <img class="mw-20" src="https://source.unsplash.com/random" alt="">
     <h2><%= flat.name %></h2>
     <p><%= flat.description %></p>
-    
-    
+    <div class=" d-flex justify-content-evenly">
+         
+         <div><i class="fas fa-euro-sign"></i><%=flat.price_per_night%></div>
+         <div><i class="fas fa-user-friends"></i><%=flat.number_of_guests%></div>
+    </div>
+    <%= link_to "More info", flat_path(flat) %>
 </div>
 <% end %>
+</div>
